@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Convergence', sans-serif;
+}
+
+body {
+    background-color: red;
+    color: black;
+    margin: 0;
+    padding: 0;
+    border: 5px solid yellow;
+}
+
+.container {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+    background-color: red;
+    border-bottom: 5px solid yellow;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    filter: drop-shadow(2px 2px #000000);
+}
+
+nav a:hover {
+    color: #fed330;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: red;
+    border-bottom: 5px solid yellow;
+}
+
+h1, h2, h3 {
+    font-family: 'Convergence', sans-serif;
+}
+
+h1 {
+    color: gold;
+}
+
+h2 {
+    color: beige;
+}
+
+h3 {
+    color: gold;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+.footer-container {
+    background-color: yellow;
+    color: black;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: black;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: black;
+}
+/*Footer Final*/
+/*Start of the scrollbar Inicio da scrollbar*/
+/* width largura */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track Acompanhar*/
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle Lidar*/
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+/* Handle on hover Manipular ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: gold;
+}
+/*End of scrollbar Final da scrollbar*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: red;
+    padding: 20px;
+    border: 5px solid yellow;
+    border-radius: 10px;
+}
+
+form label {
+    color: gold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: darkorange;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .imgs {
+        flex-direction: column;
+    }
+
+    .imgs img {
+        width: 100%;
+        height: auto;
+    }
+}
